@@ -16,7 +16,7 @@ body {
   padding: 0 20px;
 }
 
-.cart-item-action{
+.cart-item-actions{
   margin-top: 20px;
 }
 
@@ -27,4 +27,8 @@ body {
 
 .action-icons:hover{
   cursor: pointer;
+}
+.cart{
+  display: flex;
+  flex-direction: column;
 }
