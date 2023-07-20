@@ -36,7 +36,8 @@ class App extends React.Component {
           img: '',
           id: 4
         }
-      ]
+      ],
+      val:0
     }
 
   }
