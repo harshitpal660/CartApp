@@ -32,3 +32,10 @@ body {
   display: flex;
   flex-direction: column;
 }
+#total{
+  font-size: 25px;
+  margin: 5px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 50%;
+  transform: translate(-20%)
+}
