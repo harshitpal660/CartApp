@@ -5,9 +5,19 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aquamarine;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.UsersList{
+  width:100%;
+  height:auto;
+  margin-top: 30px;
+}
+.user-item{
+  margin-bottom: 20px;
+  text-align: center;
 }

@@ -5,29 +5,18 @@ const CartItem=(props)=>{
     
         // console.log(props)
         // console.log(props.prod)
-<<<<<<< HEAD
         const {price,title,qty,id,img,rating} = props.prod;
-=======
-        const {price,title,qty,id} = props.prod;
->>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
         const {prod,onDecreaseQuantity,onIncreaseQuantity,onDeleteprod} = props;
         return (
             <div className='cart-item'>
                 <div className="left-block">
-<<<<<<< HEAD
                     <img style={styles.image} src={img}/>
-=======
-                    <img style={styles.image}/>
->>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
                 </div>
                 <div className="right-block">
                     <div style={{fontSize:25}}>{title}</div>
                     <div style={{color:'#777'}}>Rs {price}</div>
                     <div style={{color:'#777'}}>Qty: {qty}</div>
-<<<<<<< HEAD
                     <div style={{color:'#777'}}>rating: {rating}</div>
-=======
->>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
                     <div className="cart-item-actions">
                         {/* <img src="icons/plus.svg" alt="increase" className="action-icon"></img>
                         <img src="icons/minus" alt="decrease" className="action-icon"></img>
@@ -48,11 +37,7 @@ const styles = {
     }
 }
 
-<<<<<<< HEAD
 export default CartItem;
 
 // import firebase from 'firebase/compat/app';
 // import 'firebase/compat/firestore';
-=======
-export default CartItem;
->>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
