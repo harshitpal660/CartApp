@@ -175,7 +175,7 @@ class App extends React.Component {
       <div className='App'>
         <Navbar count={this.getCartCount()} />
         <button onClick={this.addProduct} style={{ padding: 20, fontSize: 20, margin: 10 }}>Add Prod</button>
-        {/* <div>
+        {/* <div>q
 
           <label>
             Sort by
