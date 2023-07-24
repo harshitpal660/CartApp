@@ -3,7 +3,11 @@ import CartItem from "./CartItem";
 
 
 const Cart = (props) => {
+<<<<<<< HEAD
     // console.log(props)
+=======
+    console.log(props)
+>>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
     const { products } = props;
     return (
         <div className="cart">

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+<<<<<<< HEAD
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 // Import the functions you need from the SDKs you need
@@ -21,6 +22,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+=======
+>>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,3 +32,7 @@ root.render(
     <App />
   </React.StrictMode>
 );
+<<<<<<< HEAD
+=======
+
+>>>>>>> 768212ef3466b991de427ad611444f8fa7baf578
