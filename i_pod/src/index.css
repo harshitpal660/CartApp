@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mobile{
+  height: 550px;
+  width: 350px;
+  background-color: rgb(241, 49, 97);
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 40px;
+}
+/* Styles for screen */
+.screen{
+  height: 70%;
+  width: 95%;
+  background-color: rgb(26, 26, 26);
+  margin: auto;
+  position: relative;
+  top: 30px;
+  border-radius: 10px;
+}
+.info{
+  height: 25px;
+  width: 98%;
+  background-color: rgb(155, 152, 143);
+  display: flex;
+  justify-content: space-between;
+  color: rgb(28, 29, 30);
+  margin: auto;
+  position: relative;
+  top: 2px;
+  border-radius: 2px;
+}
+#extra{
+  width: 90px;
+}
+.extrainfo{
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 3px;
+}
+.extrainfo img{
+  height: 100%;
+  width: 100%;
+ 
+}
+
+/* wallpaper */
+#wallpaper{
+  height: 92%;
+  width: 98%;
+  overflow: hidden;
+  margin: auto;
+}
+#wallpaper img{
+  height: 100%;
+  width: 100%;
+}
+/* Styles for buttons */
+.buttons{
+  height: 24.5%;
+  position: relative;
+  top: 34px;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-15%);
+}
+.circle{
+  border-radius: 50%;
+}
+#outer{
+  height: 120px;
+  width: 120px;
+  background-color: blueviolet;
+}
+#inner{
+  height: 30px;
+  width: 30px;
+  background-color: rgb(115, 127, 135);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
+  color: aliceblue;
+}
+
+.control{
+  position: absolute;
+  overflow: hidden;
+}
+.control img{
+  height: 100%;
+  width: 100%;
+}
+#menu{
+  left: 45px;
+  top: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+#play_pause{
+  top: 65px;
+  left: 40px;
+  height: 40px;
+  width: 40px;
+}
+#next{
+  top: 26px;
+  left: 80px;
+  height: 40px;
+  width: 40px;
+
+}
+#prev{
+  top: 26px;
+  height: 40px;
+  width: 40px;
+}
