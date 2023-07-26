@@ -1,18 +1,17 @@
 import React from "react"
+
 class Menu extends React.Component{
-  // constructor(){
-  //   super();
-  //   this.state={
-  //     screens:{
-  //       Menu:false
-  //     }
-  //   }
-  // }
+  
   render(){
-    // const screens = this.props.screens;
-    // console.log(screens.menu);
+    const item = this.props.item;
+    // console.log(item);
     return (
-      <div id="menu" style={{color:"wheat"}}>I am Menu</div>
+      <React.Fragment>
+        {item.active && <div className="icons" style={{border:"2px solid white"}}><img src={item.image}></img></div>}
+        {!item.active && <div className="icons"><img src={item.image}></img></div>}
+      </React.Fragment>
+      
+      // <div className="icons" style={{border:"2px solid black"}}><img src={item.image}></img></div>
     );
   }
     

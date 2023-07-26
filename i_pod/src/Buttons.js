@@ -18,11 +18,13 @@ class Buttons extends React.Component{
       isPlaying:!this.state.isPlaying
     })
   }
+  showOptions=()=>{
+
+  }
   render(){
-    const playing = this.state.isPlaying;
-    const buttons = this.props.buttons;
-    const onClickMenu = this.props.onClickMenu;
-    console.log(buttons);
+    const playing= this.state.isPlaying;
+    const {onClickMenu,onClickOK} = this.props;
+
     return (
       <div className='buttons'>
         <div id="outer" className="circle">
@@ -33,7 +35,7 @@ class Buttons extends React.Component{
           </p>
           <p className="control" id="next"><img src={next}></img></p>
           <p className="control" id="prev"><img src={prev}></img></p>
-          <div id="inner" className="circle">
+          <div id="inner" className="circle" onClick={onClickOK}>
             OK
           </div>
         </div>

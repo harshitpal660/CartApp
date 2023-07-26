@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-.mobile{
+.mobile {
   height: 550px;
   width: 350px;
   background-color: rgb(241, 49, 97);
@@ -20,8 +20,9 @@ code {
   margin-top: 50px;
   border-radius: 40px;
 }
+
 /* Styles for screen */
-.screen{
+.screen {
   height: 70%;
   width: 95%;
   background-color: rgb(26, 26, 26);
@@ -30,7 +31,8 @@ code {
   top: 30px;
   border-radius: 10px;
 }
-.info{
+
+.info {
   height: 25px;
   width: 98%;
   background-color: rgb(155, 152, 143);
@@ -42,35 +44,40 @@ code {
   top: 2px;
   border-radius: 2px;
 }
-#extra{
+
+#extra {
   width: 90px;
 }
-.extrainfo{
+
+.extrainfo {
   height: 20px;
   width: 20px;
   overflow: hidden;
   display: inline-block;
   margin: 3px;
 }
-.extrainfo img{
+
+.extrainfo img {
   height: 100%;
   width: 100%;
- 
+
 }
 
 /* wallpaper */
-#wallpaper{
+#wallpaper {
   height: 92%;
   width: 98%;
   overflow: hidden;
   margin: auto;
 }
-#wallpaper img{
+
+#wallpaper img {
   height: 100%;
   width: 100%;
 }
+
 /* Styles for buttons */
-.buttons{
+.buttons {
   height: 24.5%;
   position: relative;
   top: 34px;
@@ -78,59 +85,108 @@ code {
   cursor: pointer;
   transform: translate(-15%);
 }
-.circle{
+
+.circle {
   border-radius: 50%;
 }
-#outer{
+
+#outer {
   height: 120px;
   width: 120px;
   background-color: blueviolet;
 }
-#inner{
+
+#inner {
   height: 30px;
   width: 30px;
   background-color: rgb(115, 127, 135);
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   font-size: large;
   font-weight: 500;
   color: aliceblue;
 }
 
-#menu{
+#menu {
   left: 45px;
   top: 10px;
   height: 30px;
   width: 30px;
 }
 
-#play_pause{
+#play_pause {
   top: 65px;
   left: 40px;
   height: 40px;
   width: 40px;
 }
-#next{
+
+#next {
   top: 26px;
   left: 80px;
   height: 40px;
   width: 40px;
 
 }
-#prev{
+
+#prev {
   top: 26px;
   height: 40px;
   width: 40px;
 }
 
-.control{
+.control {
   position: absolute;
   overflow: hidden;
 }
-.control img{
+
+.control img {
   height: 100%;
   width: 100%;
+}
+
+#menuScreen {
+  display: flex;
+  height: fit-content;
+  width: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.icons {
+  height: 50px;
+  width: 50px;
+  /* background-color: bisque; */
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* style for app screen */
+.appScreen {
+  height: 100%;
+  /* width: fit-content; */
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+}
+.appScreen::-webkit-scrollbar {
+  display: none;
+}
+.AppItem {
+  margin-top: 5px;
+  height: 98%;
+  width: 324px;
+  margin-left: 3px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: antiquewhite;
+}
+.AppItem img{
+  height: 100%;
+  width: 324px;
 }
