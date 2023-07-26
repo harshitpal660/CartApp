@@ -108,13 +108,36 @@ class Screen extends React.Component {
           img:scene6,
           id:6
         }
+      ],
+      music:[
+        {
+          id:"sX2bYV6nSy4"
+        },
+        {
+          id:"hMBKmQEPNzI"
+        },
+        {
+          id:"iHhKMS6Y_fA"
+        },
+        {
+          id:"By3OgGR7uN4"
+        },
+        {
+          id:"6sgeUMG_1a0"
+        },
+        {
+          id:"3i5un3CARN4"
+        },
+        {
+          id:"dx4Teh-nv3A"
+        }
       ]
     }
   }
   render() {
-    const { screens, menu, itemClicked } = this.props;
-    // console.log(itemClicked[0].title);
-    const {games,gallery} = this.state;
+    const { screens, menu, itemClicked,onClickOK } = this.props;
+    // console.log(itemClicked.title);
+    const {games,gallery,music} = this.state;
     // console.log(menu);
     return (
       <React.Fragment>
@@ -134,6 +157,7 @@ class Screen extends React.Component {
                 return <Menu
                   item={item}
                   key={item.id}
+                  onClickOK={onClickOK}
                 />
               })}
             </div>
@@ -142,16 +166,16 @@ class Screen extends React.Component {
         </div>}
         {(screens.menu && itemClicked!=="")&&
         <div className="screen">
-          {itemClicked[0].title==="Games" && <Games games={games} key={games.id}/>}
-          {itemClicked[0].title==="Gallery" && <Gallery gallery={gallery} key={gallery.id}/>}
-          {itemClicked[0].title==="Music" && <Music/>}
-          {itemClicked[0].title==="Settings" && <Settings/>}
-          {itemClicked[0].title==="Gmail" && <Gmail/>}
-          {itemClicked[0].title==="Google" && <Google/>}
-          {itemClicked[0].title==="Instagram" && <Instagram/>}
-          {itemClicked[0].title==="Radio" && <Radio/>}
-          {itemClicked[0].title==="Snapchat" && <Snapchat/>}
-          {itemClicked[0].title==="Whatsapp" && <Whatsapp/>}
+          {itemClicked.title==="Games" && <Games games={games} key={games.id}/>}
+          {itemClicked.title==="Gallery" && <Gallery gallery={gallery} key={gallery.id}/>}
+          {itemClicked.title==="Music" && <Music music={music} key={music.id}/>}
+          {itemClicked.title==="Settings" && <Settings/>}
+          {itemClicked.title==="Gmail" && <Gmail/>}
+          {itemClicked.title==="Google" && <Google/>}
+          {itemClicked.title==="Instagram" && <Instagram/>}
+          {itemClicked.title==="Radio" && <Radio/>}
+          {itemClicked.title==="Snapchat" && <Snapchat/>}
+          {itemClicked.title==="Whatsapp" && <Whatsapp/>}
         </div>}
       </React.Fragment>
 

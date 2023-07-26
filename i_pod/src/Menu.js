@@ -1,19 +1,19 @@
 import React from "react"
 
-class Menu extends React.Component{
-  
-  render(){
-    const item = this.props.item;
-    // console.log(item);
-    return (
-      <React.Fragment>
-        {item.active && <div className="icons" style={{border:"2px solid white"}}><img src={item.image}></img></div>}
-        {!item.active && <div className="icons"><img src={item.image}></img></div>}
-      </React.Fragment>
-      
-      // <div className="icons" style={{border:"2px solid black"}}><img src={item.image}></img></div>
-    );
-  }
-    
+const Menu = (props) => {
+
+
+  const { item, onClickOK } = props;
+
+  return (
+    <React.Fragment>
+      {item.active && <div className="icons" style={{ border: "2px solid white" }} onClick={() => onClickOK(item.id)}><img src={item.image}></img></div>}
+      {!item.active && <div className="icons" onClick={() => onClickOK(item.id)}><img src={item.image}></img></div>}
+    </React.Fragment>
+
+    // <div className="icons" style={{border:"2px solid black"}}><img src={item.image}></img></div>
+  );
+
+
 }
 export default Menu;

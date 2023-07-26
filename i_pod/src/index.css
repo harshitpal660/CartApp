@@ -186,7 +186,7 @@ code {
   border-radius: 3px;
   background-color: antiquewhite;
 }
-.AppItem img{
+.AppItem .appiteminner,.appiteminner iframe{
   height: 100%;
   width: 324px;
 }
