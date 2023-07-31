@@ -1,0 +1,8 @@
+{
+  "database": {
+    "rules": "firestore. rules"
+  },
+  "hosting": {
+    "public": "build"
+   }
+}

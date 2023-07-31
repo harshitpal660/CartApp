@@ -1,6 +1,19 @@
-import { useState } from "react";
+
 import { firestore } from "../Firebase";
 import { useFormInput } from "../hooks";
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+  height: 33px;
+  background:${(props)=>props.primary?'#4caf50':'blue'};
+  border: 0;
+  color: #fff;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+`;
+
 function CreatePost() {
   const title = useFormInput('');
   const content = useFormInput('');
@@ -35,7 +48,7 @@ function CreatePost() {
             <label>Content</label>
             <textarea {...content}/>
           </div>
-          <button className="create-post-btn">Create Post</button>
+          <StyledButton primary>Create Post</StyledButton>
         </form>
       </div>
     );
