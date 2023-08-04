@@ -6,7 +6,7 @@ a {
   border-radius: 25px;
   position: relative;
   padding: 25px 25px;
-  background-color: #ffc09f;
+  background-color: #d67744;
   margin: 25px auto;
   height: auto;
   max-width: 330px;
@@ -21,6 +21,7 @@ a {
   height: 180px;
   border-radius: 10%;
   margin-right: 25px;
+  cursor: pointer;
 }
 /* 
 .btn {
