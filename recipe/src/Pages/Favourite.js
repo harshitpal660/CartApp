@@ -6,13 +6,13 @@ import homeCss from "../styles/home.module.css";
 const Favourite = () => {
   const data = JSON.parse(localStorage.getItem("dish"));
   //   console.log(data)
-  let value = Object.values(data);
-//   let value = null;
-//   if (data == null || data == undefined) {
-//     value = [];
-//   } else {
-//     value = Object.values(data);
-//   }
+  // let value = Object.values(data);
+  let value = null;
+  if (data == null || data == undefined) {
+    value = [];
+  } else {
+    value = Object.values(data);
+  }
 
   let [dish, setDishes] = useState(value);
   const [cards, setCards] = useState([]);
@@ -68,6 +68,7 @@ const Favourite = () => {
   };
   return (
     <div id={homeCss.list}>
+      {cards.length===0 && <h2>Empty</h2>}
         {cards.map((item) => (
           <Card prop={item.recipe} 
             dish={dish} 
