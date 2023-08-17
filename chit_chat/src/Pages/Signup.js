@@ -1,8 +1,8 @@
 import styles from "../Styles/login.module.css"
 import toast from 'react-hot-toast';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../hooks";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Navigate } from 'react-router-dom';
 
 const Signup = ()=>{
     const [email,setEmail] = useState('');
@@ -13,6 +13,7 @@ const Signup = ()=>{
     const [name,setName] = useState('');
 
     const auth = useAuth();
+    console.log(auth);
     const history = useNavigate();
 
     // console.log(history);
@@ -44,6 +45,9 @@ const Signup = ()=>{
             toast.error(response.message)
         }
         setSigningup(false);
+    }
+    if(auth.user){
+        return<Navigate to="/" replace={true} />
     }
     return <form className={styles.loginForm} onSubmit={handleSubmit}>
         <span className={styles.loginSignupHeader}>Register</span>

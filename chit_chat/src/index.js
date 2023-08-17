@@ -39,6 +39,15 @@ import { AuthProvider } from './Providers/AuthProvider';
 //   }
 // }
 
+
+//  for(let i=0;i<5;i++){
+//   function close(i){
+//     setTimeout(()=>{
+//       console.log(i);
+//     },1000)
+//   }
+//   close(i)
+//  }
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
@@ -48,4 +57,4 @@ root.render(
     </AuthProvider>
   </BrowserRouter>
   // </React.StrictMode>
-);
+)

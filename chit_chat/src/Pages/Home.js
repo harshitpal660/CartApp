@@ -4,6 +4,8 @@ import Comment from '../Components/Comment.js'
 import { useEffect, useState } from 'react';
 import { getPosts } from '../API';
 import { Loader } from '../Components';
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
@@ -12,7 +14,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       const response = await getPosts();
-      console.log('response', response);
+      // console.log('response', response);
       if (response.success) {
         setPosts(response.data.posts);
       }
@@ -37,7 +39,7 @@ const Home = () => {
               src="https://cdn-icons-png.flaticon.com/128/2922/2922510.png"
             />
             <div>
-              <span className={styles.postAuthor}>{post.user.name}</span>
+              <Link to={`/user/${post.user._id}`} className={styles.postAuthor}>{post.user.name}</Link>
               <span className={styles.postTime}>a minute ago</span>
             </div>
           </div>
@@ -65,7 +67,7 @@ const Home = () => {
 
           <div className={styles.postCommentList}>
             {post.comments.map((comment)=>{
-              <Comment comment={comment}/>
+              return <Comment comment={comment}/>
             })}
           </div>
         </div>

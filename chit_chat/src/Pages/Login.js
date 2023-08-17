@@ -1,8 +1,8 @@
 import styles from "../Styles/login.module.css"
 import toast from 'react-hot-toast';
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useAuth } from "../hooks";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Navigate } from 'react-router-dom';
 // import { login } from "../API";
 const Login = ()=>{
 
@@ -32,6 +32,9 @@ const Login = ()=>{
             toast.error(response.message)
         }
         setLoggingin(false);
+    }
+    if(auth.user){
+        return<Navigate to="/" replace={true} />
     }
     return <form className={styles.loginForm} onSubmit={handleSubmit}>
         <span className={styles.loginSignupHeader}>Log In</span>
