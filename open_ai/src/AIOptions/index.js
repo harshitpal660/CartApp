@@ -99,6 +99,43 @@ export const arrayItems = [
       max_tokens:1024
     }
   },
+  {
+    name: "Natural language to SQL",
+    id: "naturallanguagetosql",
+    heading: "ask me SQL",
+
+    description: "Simplify text to a level appropriate for a second-grade student.",
+    option: {
+      model: "gpt-3.5-turbo",
+      messages:[
+        {
+          "role": "system",
+          "content": "Summarize content you are provided with for a second-grade student."
+        },
+        
+      ],
+      temperature:0,
+      max_tokens:1024
+    }
+  },
+  {
+    name: "Summarize for a 2nd grader",
+    id: "summrizeFor2ndGrader",
+    heading: "I will summarize The the Para",
+
+    description: "Convert natural language into SQL queries.",
+    option: {
+      model: "gpt-3.5-turbo",
+      messages:[
+        {
+          "role": "system",
+          "content": "Given the following SQL tables, your job is to write queries given a user’s request.\n\nCREATE TABLE Orders (\n  OrderID int,\n  CustomerID int,\n  OrderDate datetime,\n  OrderTime varchar(8),\n  PRIMARY KEY (OrderID)\n);\n\nCREATE TABLE OrderDetails (\n  OrderDetailID int,\n  OrderID int,\n  ProductID int,\n  Quantity int,\n  PRIMARY KEY (OrderDetailID)\n);\n\nCREATE TABLE Products (\n  ProductID int,\n  ProductName varchar(50),\n  Category varchar(50),\n  UnitPrice decimal(10, 2),\n  Stock int,\n  PRIMARY KEY (ProductID)\n);\n\nCREATE TABLE Customers (\n  CustomerID int,\n  FirstName varchar(50),\n  LastName varchar(50),\n  Email varchar(100),\n  Phone varchar(20),\n  PRIMARY KEY (CustomerID)\n);"
+        },
+      ],
+      temperature:0,
+      max_tokens:1024
+    }
+  },
 
 ]
 

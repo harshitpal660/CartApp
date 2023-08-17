@@ -94,7 +94,8 @@ export default function Chat(props) {
               return (
                 <div className="chat-wrapper">
                   <div className="userText">
-                    <div>{item.content}</div>
+                    <div><p>{item.content}</p></div>
+                    {/* <span>{item.content}</span> */}
                     <div className="image-wrapper">
                       <img src={user} alt="user"></img>
                     </div>
@@ -124,7 +125,7 @@ export default function Chat(props) {
               return (
                 <div className="chat-wrapper">
                   <div className="userText">
-                    <div>{item.content}</div>
+                  <div><p>{item.content}</p></div>
                     <div className="image-wrapper">
                       <img src={user} alt="user"></img>
                     </div>
